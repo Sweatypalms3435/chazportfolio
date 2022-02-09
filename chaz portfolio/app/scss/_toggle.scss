@@ -1,0 +1,75 @@
+.toggle{
+    margin-top: 7rem;
+    
+    &-switch{
+        cursor: pointer;
+        color: white;
+        margin-right: 3em;
+        gap: 1em;
+
+        div{
+            margin-top: 0.5em;
+        }
+        .sun{
+            margin-left: auto;
+        }
+        .moon{
+            margin-right: -1.5em;
+        }
+    }
+
+}
+.switch{
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    display:inline-block;
+    height: 1.25rem;
+    width: 3.125rem;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider{
+    z-index: -1;
+    position: absolute;
+    cursor: pointer;
+    background-color: $lighgrayishblue;
+    transition: 0.5s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 0.1875rem solid $lighgrayishblue;
+    box-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(0, 0, 0, 0.5);
+
+    &::before{
+        position: absolute;
+        content:"";
+        top: 0.03125rem;
+        background-color: white;
+        transition: 0.5s;
+    }
+}
+
+input:checked + .slider::before{
+    transform: translateX(1.875rem);
+}
+
+input:checked + .slider{
+    background-color: rgba(0, 0, 0, 0.3,);
+}
+
+.slider.round{
+    border-radius: 2.1875rem;
+}
+
+.slider.round:before{
+    width: 30%;
+    height: 95%;
+    border-radius: 50%;
+    transform: rotateZ(-45deg);
+
+}

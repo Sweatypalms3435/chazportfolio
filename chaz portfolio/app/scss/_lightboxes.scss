@@ -1,0 +1,70 @@
+:root{
+    --background-color: white;
+    --title-color: hsl(237, 12%, 33%);
+    --title-color-work: hsl(240, 5%, 91%);
+    --bachground-color2: hsl(238, 29%, 16%);
+}
+
+.lightbox{  
+    position: fixed;
+    top: 25rem;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    max-width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    transform: translateY(-500rem);
+    transform-origin: top;
+}
+
+.contentexit{
+        min-width: 100%;
+
+        .tab{
+            max-width: 30%;
+
+            @include breakpoint-down(medium){
+                max-width: 70%;
+            }
+
+            
+            @include breakpoint-down(small){
+                max-width: 90%;
+            }
+        }
+
+        .mobile{
+            max-width: 25%;
+
+            @include breakpoint-down(medium){
+                max-width: 50%;
+            }
+
+            @include breakpoint-down(small){
+                max-width: 70%;
+            }
+        }
+
+        .cp{
+            max-width: 50%;
+            
+            @include breakpoint-down(medium){
+                max-width: 90%;
+            }
+
+            @include breakpoint-down(small){
+                max-width: 100%;
+            }
+        }
+    
+       img{
+           box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.5);
+           height: 0%;
+        }
+}
+
+.lightboxheight{
+    transform: translateY(0rem);
+}

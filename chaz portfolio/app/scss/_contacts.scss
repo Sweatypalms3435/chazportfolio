@@ -1,0 +1,188 @@
+:root{
+    --colorh: hsl(237, 12%, 33%);
+    --color: white;
+    --color1: hsl(238, 29%, 16%);
+    --bachground-color1: white;
+    --bachground-color2: hsl(238, 29%, 16%);
+    --border-color: white;
+}
+ 
+.sayHidark{
+    --colorh: hsl(240, 5%, 91%);
+    --color1: white;
+    --color: hsl(238, 29%, 16%);
+    --bachground-color2: rgba(215, 215, 250, 0.9);
+    --bachground-color1: hsl(238, 29%, 16%);
+    --border-color: hsl(238, 29%, 16%);
+}
+
+.sayHi{
+    margin-top: -1.7rem;
+    position: absolute;
+    min-width: 100%;
+    height: 88vh;
+    transition: all 300ms ease-in-out;    
+
+    &__menu{
+        position: absolute;
+        height: 0%;
+        width: 100%;
+        transition: all 300ms ease-in-out;
+        overflow: hidden;
+
+        .saycate{
+            z-index: 100;
+            margin: 1rem;
+            position: relative;
+            background-color: var(--bachground-color1);
+            border-radius: 1.5625rem;
+            width: 58rem;
+            height: 25rem;
+            box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.5);
+
+            &__exit{
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            &__close{
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: var(--bachground-color2);
+                border-radius: 50%;
+                margin-top: 0.6rem;
+                margin-right: 0.6rem;
+                position: absolute;
+                transition: all 300ms ease-in-out;
+                a{
+                    padding: 0%;
+                    margin-left: 0.48rem;     
+                    color: var(--color);
+                    text-decoration: none;
+                }
+
+
+                &:hover{
+                    opacity: 0.7;
+                }
+
+
+            }
+            
+
+            .socials{
+                border-top-left-radius: 1.5625rem;
+                border-bottom-left-radius: 1.5625rem;
+                width: 30%;
+                height: 100%;
+                background-color: var(--bachground-color2);
+                
+
+                p{
+                    margin: 0%;
+                    color: var(--color);
+
+                    @include breakpoint-down(small){
+                        font-size: 0.7em;
+                    }
+                }
+
+                &__logo{
+                    text-align: center;
+                    font-size: 2em;
+                    justify-self: center;
+                    color: var(--color);
+                    margin-bottom: 1em;
+
+                    @include breakpoint-down(medium){
+                        margin-bottom: 0.3em;
+                    }
+
+                    @include breakpoint-down(small){
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            .email{
+                border-top-right-radius: 1.5625rem;
+                border-bottom-right-radius: 1.5625rem;
+                width: 70%;
+                height: 100%;
+                background-color: var(--bachground-color1);
+                padding: 2rem;
+                gap: 5em;
+
+
+                .submit{
+                    cursor: pointer;
+                    border-radius: 1.5625rem;
+                    background: transparent;
+                    border-color: var(--border-color);
+                    border:solid;
+                    color: var(--color1);
+                    font-size: 100%;
+                    transition: all 300ms ease-in-out;
+                    margin-left: 0.5rem;
+                    &:not(:first-child){
+                        margin-right: 1.5rem;
+                    }
+
+                    &:hover{
+                        border-style: dashed;
+                        background: rgba(0, 0, 0, 0.2);
+                    }
+
+                }
+        
+
+                h1{
+                    font-size: 3em;  
+                    color:var(--colorh);
+                    line-height: 2rem;
+                    padding: 0%;
+                    margin: 0%;
+                    margin-bottom: -3rem;
+                    margin-top: 1rem;
+
+                    @include breakpoint-down(small){
+                        font-size: 2.3rem;
+                    }
+                }
+
+            .emailforms{
+                width: 100%
+            }
+            .forms{
+                &:not(:first-child){
+                    margin-top: 1rem;
+                }
+            }
+
+            &__forms{ 
+                width: 100%;
+                padding: 0;
+                margin-right: 2rem;
+                font-family:'Kumbh Sans', sans-serif;
+                font-size: 1em;
+                color: var(--color1);
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid var(--color1);
+                
+            }
+            }
+        }
+    }
+
+   
+
+}
+
+
+.contacts{
+    height: 100%;
+}
+

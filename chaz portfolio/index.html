@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="/dist/styles.css">
+    <title>Chaz Portfolio</title>
+</head>
+<body>
+    <header id="header "class="header"> 
+            
+        <nav class="flex flex-jc-sb flex-ai-c fade-in">
+            <a href="#" class="header__logo">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+
+            <a class="header__menu flex flex-jc-c flex-ai-c hide-for-desktop fade-in">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+           
+            <div class="header__categories hide-for-mobile fade-in">
+                <a href="#" class="cate"> Home</a>
+                <a href="#about" class="cate"> About </a>
+                <a href="#mywork" class="cate"> Work </a>
+                <a href="#footer" class="cate"> Contact </a>
+                <a href="#" class="button">Say Hi!</a>
+            </div>
+        </nav>
+        <div class="overlaymenu flex flex-jc-fe">
+            <div class="overlay flex  flex-jc-fe fade-in">
+                <div class="header__categories flex overlay__categories ">
+                        <a href="#" class="cate home"> Home</a>
+                        <a href="#about" class="cate aboutme"> About </a>
+                        <a href="#mywork" class="cate myWork"> Work </a>
+                        <a href="#footer" class="cate contactme"> Contact </a>
+                        <a href="#" class="button mobile__sayHi">Say Hi!</a>                
+                </div>
+            </div>
+        </div>  
+    </header>  
+
+    <div class="sayHi flex flex-jc-c">
+        <div class="sayHi__menu email flex flex-jc-c flex-ai-c">
+            <div class="saycate flex">
+                <div class="saycate__exit">
+                    <div class="saycate__close">
+                        <a href="#" class="exit">x</a>
+                    </div>
+                </div>
+                                
+                <div class="socials flex flex-jc-c flex-ai-c flex-fd-c">
+                        <a href="https://twitter.com/chazinocencio?s=07"><i class="socials__logo fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/chazinocencio/"><i class="socials__logo fa fa-instagram"></i></a>
+                        <a href="https://www.reddit.com/u/chazinocencio?utm_medium=android_app&utm_source=share"><i class="socials__logo fa fa-reddit-alien"></i></a>
+                        <a href="https://www.tiktok.com/@chazinocencio?_d=secCgYIASAHKAESPgo8O2LLG7LDBRwtmocHwYrL2YyiJpfOQhxlzwiFppoTJ7nG%2F1p3d%2FCYh%2FG9WdXlY9Q67b5r80mKFvyIT6r0GgA%3D&language=en&sec_uid=MS4wLjABAAAA6XnK39hvXpUQ3JsUMd3nkEOWSO3QlgFri-_uznCh0b1AYW0J4J_7isnYBIYjq-Ai&sec_user_id=MS4wLjABAAAA6XnK39hvXpUQ3JsUMd3nkEOWSO3QlgFri-_uznCh0b1AYW0J4J_7isnYBIYjq-Ai&share_app_id=1180&share_author_id=300565857372704768&share_link_id=ad91ddfb-83e2-4960-bbbb-4aef7448e2c3&timestamp=1631365126&u_code=dga93lbcddkcl&user_id=300565857372704768&utm_campaign=client_share&utm_medium=android&utm_source=messenger&source=h5_t&_r=1"><i class="socials__logo iconify" data-icon="simple-icons:tiktok"></i></a>
+                        <a href="https://github.com/chazinocencio"><i class="socials__logo fa fa-github"></i></a>
+                        <p>Discord:</p>
+                        <p>cheezewiz#2766</p>
+                </div>
+                <div class="email email__padding flex flex-fd-c emaildark">
+                    <div class="flex flex-jc-c">
+                        <h1>Email Me!</h1>
+                    </div>
+                    <div class="flex flex-fd-c flex-jc-c">
+                        <form action="https://formsubmit.co/chazinocencio15@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="Client??">
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="emailforms flex flex-fd-c flex-jc-fs">
+                                <div class="forms">
+                                    <input type="text" name="name" placeholder="Full Name" class="email__forms" required>
+                                </div>
+                                <div class="forms">
+                                    <input type="email" name="email" placeholder="Email Address" class="email__forms" required>
+                                </div>
+                                <div class="forms">
+                                    <textarea placeholder="Your Message" name="message" rows="7" class="email__forms" required></textarea>
+                                </div>
+                                <div class="forms">
+                                    <button type="reset" class="submit cancel">Cancel</button>
+                                    <button type="submit" class="submit">Send</button>
+                                </div>
+                            </div>
+                       </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="toggle fade-in">
+        <div class =" toggle toggle-switch flex flex-ai-c">
+            <div class="sun">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z" />
+                </svg>
+            </div>
+                <label class="switch">
+                    <input type="checkbox" id="switch">
+                    <span class="slider round"></span>
+                </label>
+            <div class="moon">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M2 12A10 10 0 0 0 15 21.54A10 10 0 0 1 15 2.46A10 10 0 0 0 2 12Z" />
+                </svg>
+            </div>
+        </div>
+    </div>  
+
+  <section class="interface fade-in">
+      <div class="flex flex-jc-c">
+        <div class="interface__secondheader fade-in"> 
+            <p>Hi, my name is</p>
+            <h1 class="name"> Chaz Inocencio.</h1>
+            <h1>I like to make stuff.</h1>
+            <div class="info"><p>I'm a sleff-taught front-end programer specializing in HTML, CSS, and JS, I'm hoping to work with you soon:))</p></div>
+        </div>
+      </div>
+
+        <div id="about" class="aboutmewidth flex flex-ai-c flex-jc-c fade-in">
+            <div class="aboutme flex flex-jc-sb flex-jc-c flex-ai-c ">
+                <div class="aboutme__info flex"> 
+                    <div>
+                        <h1>Hey! I'm </h1> <h1 class="chaz">Chaz Inocencio.</h1>
+                    <div class="aboutme__description">
+                        <p>
+                            I'm a self-taught front-end web developer specializing Html, CSS and Javascript! I'm a man who likes to follow the time given and believes in full communication with the client to make a product both you and I would be proud of! If everything sounds good to you hit my socials and I'd be glad to further discuss the details of the project with you there. Cheers!
+                       </p>
+                    </div>
+                    
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                    </div>
+                    
+                    <div class="imageheight flex flex-ai-fe">
+                        <div class="image flex flex-ai-fe">
+                            <img src="/images/figure.png" alt="logo">
+                        </div>
+                    </div>                     
+                </div>
+        </div>
+
+        </div>
+
+        <div id="mywork" class="workwidth flex flex-ai-c flex-jc-c fade-in">
+            <div class="work flex">
+                <div class="work__info flex">
+                    <div class="work-images flex">
+                        <div class="img"><a class="imgcp"><img src="/images/e29bb817-12f1-411c-820a-a4bab8c59d21.png" alt="ozzamu-ss-cp"></a></div>
+                        <div class="img"><a class="imgtab"><img src="/images/241359674_314952790428010_5972607778011821859_n.png" alt="ozzamu-ss-tab"></a></div>
+                        <div class="img"><a class="imgmobile flex flex-jc-fs"><img src="/images/Screenshot_20210909-163505_Messenger.jpg" alt="ozzamu-ss-mobile"></a></div>
+                    </div>
+                    <div class="description flex flex-fd-c">
+                        <div class="work-description">
+                            <p class="feature">Featured Project</p>
+                            <h1>Ozzamu Portfolio</h1>
+                            <p class="descriptioninfo">An art portfolio showcasing a compilation of the artist's finest work to be used for their freelancing career.</p>
+                        </div>
+                        <div class="programs flex flex-fd-c">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                                <div class="programs flex ">
+                                    <a href="https://github.com/chazinocencio" class="flex flex-ai-c flex-jc-c "><i class="socials__logo github fa fa-github"></i></a>
+                                    <a href="https://ozzamuportfolio.netlify.app/" class="flex flex-ai-c flex-jc-c"><i class="fa fa-external-link"></i></i></a>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="contact flex flex-ai-c flex-jc-c  fade-in">
+            <div class="contact__me flex flex-ai-c flex-jc-c flex-fd-c">
+                <h1>Get In Touch With Me!</h1>
+                <div class="contactdescription">
+                    <p>I'm always active in my socials no matter where you are in this world, I see to it that I respond in a timely manner, if all is good or you just wanna say hi, hit me up. I'm looking forward to work with you.</p>
+                </div>
+                <a href="#" class="button buttoncontacts">Say Hi!</a>
+            </div>
+        </div>  
+
+        <div class="lightboxes">
+            <div class="lightbox lightboxcp flex flex-jc-c flex-ai-c">
+                <div class="contentexit">
+                    <div class="content flex flex-jc-c flex-ai-c">
+                        <img class="cp" src="/images/e29bb817-12f1-411c-820a-a4bab8c59d21.png" alt="ozzamu-ss-cp">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lightbox lightboxtab flex flex-jc-c flex-ai-c">
+                <div class="contentexit">
+                    <div class="content flex flex-jc-c flex-ai-c">
+                        <img class="tab" src="/images/241359674_314952790428010_5972607778011821859_n.png" alt="ozzamu-ss-tab">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lightbox lightboxmobile flex flex-jc-c flex-ai-c">
+                <div class="contentexit flex flex-jc-c flex-ai-c ">
+                    <div class="content flex flex-jc-c flex-ai-c">
+                        <img class="mobile" src="/images/Screenshot_20210909-163505_Messenger.jpg" alt="ozzamu-ss-mobile">
+                    </div>
+                </div>
+            </div>
+        </div>  
+</section>  
+    
+    <div id="footer" class="footer flex flex-fd-c"> 
+        <div class="socials flex flex-jc-c flex-ai-c flex-gap">
+            <a href="https://twitter.com/chazinocencio?s=07"><i class="socials__logo fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/chazinocencio/"><i class="socials__logo fa fa-instagram"></i></a>
+            <a href="https://www.reddit.com/u/chazinocencio?utm_medium=android_app&utm_source=share"><i class="socials__logo fa fa-reddit-alien"></i></a>
+            <a href="https://www.tiktok.com/@chazinocencio?_d=secCgYIASAHKAESPgo8O2LLG7LDBRwtmocHwYrL2YyiJpfOQhxlzwiFppoTJ7nG%2F1p3d%2FCYh%2FG9WdXlY9Q67b5r80mKFvyIT6r0GgA%3D&language=en&sec_uid=MS4wLjABAAAA6XnK39hvXpUQ3JsUMd3nkEOWSO3QlgFri-_uznCh0b1AYW0J4J_7isnYBIYjq-Ai&sec_user_id=MS4wLjABAAAA6XnK39hvXpUQ3JsUMd3nkEOWSO3QlgFri-_uznCh0b1AYW0J4J_7isnYBIYjq-Ai&share_app_id=1180&share_author_id=300565857372704768&share_link_id=ad91ddfb-83e2-4960-bbbb-4aef7448e2c3&timestamp=1631365126&u_code=dga93lbcddkcl&user_id=300565857372704768&utm_campaign=client_share&utm_medium=android&utm_source=messenger&source=h5_t&_r=1"><i class="socials__logo iconify" data-icon="simple-icons:tiktok"></i></a>
+            <a href="https://github.com/chazinocencio"><i class="socials__logo fa fa-github"></i></a>
+        </div>
+        <div>
+            <p>Discord: cheezewiz#2766</p>
+        </div>
+    </div>
+    
+<script src="/app/js/script.js"></script>
+</body>
+</html>
